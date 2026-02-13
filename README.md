@@ -1,6 +1,6 @@
 # COMP 584 HW3 (AJK)
 
-GitHub Pages site: https://babyziba.github.io/CS545HW1/
+GitHub Pages site: [https://babyziba.github.io/CS545HW1/](https://babyziba.github.io/CS545HW1/)
 
 ## What’s included
 - `index.html` (single-column email layout with 600px inner table)
