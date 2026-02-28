@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>EqualCare + Portfolio — Quick Update</title>
+  <title>Meow meow meow</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,7 +27,7 @@
       line-height: inherit !important;
     }
 
-    /* TYPOGRAPHY */
+    /* TYPOGRAPHY (student code: basic + readable, no gradients) */
     .text { font-family: Inter, Arial, Helvetica, sans-serif; }
     .h1 { font-size: 28px; line-height: 34px; }
     .h2 { font-size: 18px; line-height: 24px; }
@@ -41,19 +41,20 @@
     /* INTERACTIVE BUTTON + LINKS */
     .btn a { transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, letter-spacing 180ms ease; }
     .btn a:hover { background-color: #2b2b2b !important; letter-spacing: .4px; }
-
     .link { transition: color 160ms ease, text-decoration-thickness 160ms ease; }
     .link:hover { color: #111111 !important; text-decoration-thickness: 3px; }
 
-    /* KEYFRAMES ANIMATION (NO opacity/scale) */
-    @keyframes nudgeRight {
-      0%   { transform: translateX(0px); }
-      45%  { transform: translateX(3px); }
-      100% { transform: translateX(0px); }
+    /* KEYFRAMES ANIMATION */
+    @keyframes wiggleTail {
+      0%   { transform: rotate(0deg) translateX(0px); }
+      35%  { transform: rotate(6deg) translateX(2px); }
+      70%  { transform: rotate(-6deg) translateX(-2px); }
+      100% { transform: rotate(0deg) translateX(0px); }
     }
-    .arrow {
+    .tail {
       display: inline-block;
-      animation: nudgeRight 1.6s ease-in-out infinite;
+      transform-origin: 10% 50%;
+      animation: wiggleTail 1.4s ease-in-out infinite;
     }
 
     /* CHECKED-BOX ACCORDION */
@@ -82,6 +83,7 @@
       .stack-column-cell { display: block !important; width: 100% !important; max-width: 100% !important; }
       .stack-column-cell { padding-left: 0 !important; padding-right: 0 !important; }
       .center-on-mobile { text-align: center !important; }
+      .full-on-mobile { width: 100% !important; }
     }
   </style>
 </head>
@@ -100,39 +102,49 @@
           <tr>
             <td style="background-color:#111111; padding: 10px 24px;" class="pad">
               <p class="text small" style="margin:0; color:#ffffff;">
-                Portfolio + project update • February 2026
+                Cat Club Update • February 2026 • meows, meows, and meows
               </p>
             </td>
           </tr>
 
-          <!-- LOGO + HEADLINE -->
+          <!-- HEADLINE -->
           <tr>
-            <td align="center" style="padding: 20px 24px 10px 24px;" class="pad">
-              <img src="logo.jpeg" width="84" alt="Anita Jalili logo" style="display:block;" />
-              <h1 class="text h1" style="margin:14px 0 0 0; color:#111111;">
-                Anita Jalili — EqualCare + Portfolio
+            <td align="center" style="padding: 22px 24px 10px 24px;" class="pad">
+              <p class="text small" style="margin:0; color:#666666; letter-spacing: .5px;">PURRFECT PAWS</p>
+              <h1 class="text h1" style="margin:10px 0 0 0; color:#111111;">
+                The weekly meow <span class="tail" aria-hidden="true">~</span>
               </h1>
               <p class="text p" style="margin:10px 0 0 0; color:#444444;">
-                A quick, skimmable update on what I’ve been building — with links you can open in one click.
+                MEOW meow mow meow meow meow moew 
               </p>
             </td>
           </tr>
 
-          <!-- HERO (REAL IMAGE FROM REPO) -->
+          <!-- HERO (NO PLACEHOLDER IMAGE: TEXT-BASED HERO) -->
           <tr>
-            <td align="center" style="padding: 0 24px 0 24px;" class="pad">
-              <img src="assets/web.png" width="552" alt="Web accessibility preview graphic" style="display:block; width:100%; max-width:552px; height:auto; border-radius: 10px;" />
+            <td align="center" style="padding: 6px 24px 0 24px;" class="pad">
+              <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #e6e6e6; border-radius: 12px;">
+                <tr>
+                  <td align="center" style="padding: 18px 14px;">
+                    <p class="text" style="margin:0; font-size: 44px; line-height: 48px;">😺🐾😼</p>
+                    <p class="text p" style="margin:10px 0 0 0; color:#444444;">
+                      This email is built to be responsive  readable everywhere.
+                    </p>
+    
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
 
           <!-- CTA BUTTON -->
           <tr>
-            <td align="center" style="padding: 18px 24px 20px 24px;" class="pad">
+            <td align="center" style="padding: 16px 24px 18px 24px;" class="pad">
               <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" class="btn">
                 <tr>
                   <td align="center" bgcolor="#111111" style="border-radius: 8px;">
                     <a
-                      href="https://babyziba.github.io/CS545HW1/"
+                      href="mailto:cats@purrfectpaws.club?subject=I%20want%20to%20help%20the%20cats!"
                       target="_blank"
                       style="
                         display: inline-block;
@@ -144,9 +156,9 @@
                         border-radius: 8px;
                         border: 1px solid #111111;
                       "
-                      aria-label="Open Anita Jalili hosted site"
+                      aria-label="Email Purrfect Paws to help the cats"
                     >
-                      View the hosted site <span class="arrow" aria-hidden="true">➜</span>
+                      Adopt / volunteer by email <span class="tail" aria-hidden="true">~</span>
                     </a>
                   </td>
                 </tr>
@@ -157,7 +169,8 @@
           <!-- TWO-COLUMN COMPONENT -->
           <tr>
             <td style="padding: 0 24px 8px 24px;" class="pad">
-              <h2 class="text h2" style="margin:0; color:#111111;">Featured work (2-column)</h2>
+              <h2 class="text h2" style="margin:0; color:#111111;">Meet the cats (2-column)</h2>
+              <p class="text p" style="margin:8px 0 0 0; color:#444444;">meow meow meow meow</p>
             </td>
           </tr>
 
@@ -170,13 +183,13 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #e6e6e6; border-radius: 12px;">
                       <tr>
                         <td style="padding: 14px;">
-                          <p class="text small" style="margin:0; color:#666666;">Project</p>
-                          <p class="text h2" style="margin:6px 0 8px 0; color:#111111; font-weight:700;">EqualCare</p>
+                          <p class="text small" style="margin:0; color:#666666;">Adoptable</p>
+                          <p class="text h2" style="margin:6px 0 8px 0; color:#111111; font-weight:700;">Miso</p>
                           <p class="text p" style="margin:0; color:#444444;">
-                            Detects gender bias in healthcare datasets (CSV upload → bias analysis → visualizations → plain-language summaries).
+                            i love cats
                           </p>
                           <p class="text p" style="margin:12px 0 0 0;">
-                            <a class="link" href="https://babyziba.github.io/CS545HW1/" target="_blank" style="color:#0000EE; text-decoration: underline;">See a live demo</a>
+                            <a class="link" href="mailto:cats@purrfectpaws.club?subject=Adopt%20Miso" style="color:#0000EE; text-decoration: underline;">Ask about Miso</a>
                           </p>
                         </td>
                       </tr>
@@ -188,13 +201,13 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border:1px solid #e6e6e6; border-radius: 12px;">
                       <tr>
                         <td style="padding: 14px;">
-                          <p class="text small" style="margin:0; color:#666666;">Focus</p>
-                          <p class="text h2" style="margin:6px 0 8px 0; color:#111111; font-weight:700;">Email UX + Accessibility</p>
+                          <p class="text small" style="margin:0; color:#666666;">Adoptable</p>
+                          <p class="text h2" style="margin:6px 0 8px 0; color:#111111; font-weight:700;">Juniper</p>
                           <p class="text p" style="margin:0; color:#444444;">
-                            Bulletproof layout, responsive multi-column stacking, and progressive enhancement for interactive content.
+                            Meow meow meow meow mmmmoowowowowo
                           </p>
                           <p class="text p" style="margin:12px 0 0 0;">
-                            <a class="link" href="https://babyziba.github.io/CS545HW1/" target="_blank" style="color:#0000EE; text-decoration: underline;">Open the campaign page</a>
+                            <a class="link" href="mailto:cats@purrfectpaws.club?subject=Adopt%20Juniper" style="color:#0000EE; text-decoration: underline;">Ask about Zuko</a>
                           </p>
                         </td>
                       </tr>
@@ -208,8 +221,8 @@
           <!-- THREE-COLUMN COMPONENT -->
           <tr>
             <td style="padding: 0 24px 8px 24px;" class="pad">
-              <h2 class="text h2" style="margin:0; color:#111111;">Quick actions (3-column)</h2>
-              <p class="text p" style="margin:8px 0 0 0; color:#444444;">Pick a next step — each one opens the same hosted hub (easy for reviewers).</p>
+              <h2 class="text h2" style="margin:0; color:#111111;">Three quick ways to help (3-column)</h2>
+              <p class="text p" style="margin:8px 0 0 0; color:#444444;">Buttons have hover transitions where supported.</p>
             </td>
           </tr>
 
@@ -220,12 +233,12 @@
                   <td class="stack-column-cell" width="33.33%" style="padding-right: 8px;">
                     <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #e6e6e6; border-radius: 12px;">
                       <tr><td style="padding: 14px;">
-                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">Portfolio</p>
-                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Projects + highlights in one place.</p>
+                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">Foster</p>
+                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Short-term home, huge impact.</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn">
                           <tr>
                             <td bgcolor="#111111" style="border-radius: 8px;">
-                              <a href="https://babyziba.github.io/CS545HW1/" target="_blank" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">Open</a>
+                              <a href="mailto:cats@purrfectpaws.club?subject=Foster%20interest" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">Email</a>
                             </td>
                           </tr>
                         </table>
@@ -236,12 +249,12 @@
                   <td class="stack-column-cell" width="33.33%" style="padding-left: 4px; padding-right: 4px;">
                     <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #e6e6e6; border-radius: 12px;">
                       <tr><td style="padding: 14px;">
-                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">EqualCare</p>
-                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Bias detection workflow demo.</p>
+                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">Donate</p>
+                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Food, litter, vet care fund.</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn">
                           <tr>
                             <td bgcolor="#111111" style="border-radius: 8px;">
-                              <a href="https://babyziba.github.io/CS545HW1/" target="_blank" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">View</a>
+                              <a href="mailto:cats@purrfectpaws.club?subject=Donation%20question" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">Ask</a>
                             </td>
                           </tr>
                         </table>
@@ -252,12 +265,12 @@
                   <td class="stack-column-cell" width="33.33%" style="padding-left: 8px;">
                     <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #e6e6e6; border-radius: 12px;">
                       <tr><td style="padding: 14px;">
-                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">GitHub</p>
-                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Source code + commit history.</p>
+                        <p class="text h2" style="margin:0 0 6px 0; color:#111111; font-weight:700;">Volunteer</p>
+                        <p class="text p" style="margin:0 0 12px 0; color:#444444;">Socialization + event help.</p>
                         <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn">
                           <tr>
                             <td bgcolor="#111111" style="border-radius: 8px;">
-                              <a href="https://babyziba.github.io/CS545HW1/" target="_blank" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">Browse</a>
+                              <a href="mailto:cats@purrfectpaws.club?subject=Volunteer%20interest" style="display:inline-block; padding: 10px 14px; font-family: Inter, Arial, Helvetica, sans-serif; font-size: 13px; color:#ffffff; text-decoration:none; border-radius:8px; border:1px solid #111111;">Join</a>
                             </td>
                           </tr>
                         </table>
@@ -276,15 +289,14 @@
                 <tr>
                   <td style="padding: 14px;">
 
-                    <p class="text h2" style="margin:0; color:#111111; font-weight:700;">More details (checkbox accordion)</p>
+                    <p class="text h2" style="margin:0; color:#111111; font-weight:700;">Meow tips (checkbox accordion)</p>
                     <p class="text p" style="margin:8px 0 0 0; color:#444444;">
-                      In clients that support it (Apple Mail / iOS Mail), you can expand/collapse the section below.
-                      In clients that don’t (ex: Gmail), the extra details remain visible as a normal section.
+                      Expand/collapse 
                     </p>
 
                     <!-- Checkbox + Label + Toggle Content -->
-                    <input class="cb" type="checkbox" id="more" checked />
-                    <label for="more" class="toggle-label text p" style="
+                    <input class="cb" type="checkbox" id="tips" checked />
+                    <label for="tips" class="toggle-label text p" style="
                       display:inline-block;
                       margin-top: 10px;
                       padding: 10px 12px;
@@ -293,7 +305,7 @@
                       color:#111111;
                       font-weight:700;
                     ">
-                      Toggle extra notes
+                      Toggle meow tips
                     </label>
 
                     <div class="toggle">
@@ -301,10 +313,13 @@
                         <tr>
                           <td style="padding-top: 12px;">
                             <p class="text p" style="margin:0 0 10px 0; color:#444444;">
-                              <strong>Why this email layout?</strong> It’s built with classic 600px tables + progressive enhancements (hover states, keyframes animation, and form-driven UI) that gracefully degrade in stricter clients.
+                              <strong>Play:</strong> meow meow 
+                            </p>
+                            <p class="text p" style="margin:0 0 10px 0; color:#444444;">
+                              <strong>Food:</strong> meow meow meow
                             </p>
                             <p class="text p" style="margin:0; color:#444444;">
-                              <strong>Accessibility notes:</strong> descriptive alt text, sufficient contrast, and tap-friendly buttons with large padding.
+                              <strong>Calm:</strong> MEOW
                             </p>
                           </td>
                         </tr>
@@ -323,12 +338,10 @@
               <table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" style="border:1px solid #e6e6e6; border-radius: 12px;">
                 <tr>
                   <td style="padding: 14px;">
-                    <p class="text h2" style="margin:0; color:#111111; font-weight:700;">Choose what to review (radio tabs)</p>
-                    <p class="text p" style="margin:8px 0 12px 0; color:#444444;">
-                      Works in clients that keep form elements + embedded CSS. Others will simply show the first panel.
-                    </p>
+                    <p class="text h2" style="margin:0; color:#111111; font-weight:700;">Pick the vibe (radio tabs)</p>
+    
 
-                    <!-- Radios (checked by default) -->
+                    <!-- Radios -->
                     <input class="rb" type="radio" name="tabs" id="tab1" checked />
                     <input class="rb" type="radio" name="tabs" id="tab2" />
                     <input class="rb" type="radio" name="tabs" id="tab3" />
@@ -337,9 +350,9 @@
                     <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
                       <tr>
                         <td align="left" class="center-on-mobile">
-                          <label for="tab1" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;" >EqualCare</label>
-                          <label for="tab2" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;" >Email UI</label>
-                          <label for="tab3" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;" >Accessibility</label>
+                          <label for="tab1" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;">Cuddly</label>
+                          <label for="tab2" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;">Playful</label>
+                          <label for="tab3" class="text p" style="display:inline-block; margin: 0 6px 6px 0; padding: 8px 10px; border:1px solid #111111; border-radius: 999px; font-weight:700;">Mischief</label>
                         </td>
                       </tr>
                     </table>
@@ -348,17 +361,17 @@
                     <div class="tabs">
                       <div class="tab-panel panel1">
                         <p class="text p" style="margin:0; color:#444444;">
-                          EqualCare focuses on practical bias detection: upload a dataset, run checks, and review visuals + summaries.
+                          Meow
                         </p>
                       </div>
                       <div class="tab-panel panel2">
                         <p class="text p" style="margin:0; color:#444444;">
-                          This template includes a 2-column and 3-column layout that stacks on mobile, plus hover + keyframes animation.
+                          Meow
                         </p>
                       </div>
                       <div class="tab-panel panel3">
                         <p class="text p" style="margin:0; color:#444444;">
-                          Accessible defaults: descriptive headings, readable type sizes, and links that remain distinct without relying on color alone.
+                          Meow
                         </p>
                       </div>
                     </div>
@@ -372,12 +385,11 @@
           <!-- FOOTER -->
           <tr>
             <td style="padding: 18px 24px 26px 24px;" class="pad">
-              <img src="assets/wave.png" width="552" alt="Decorative wave" style="display:block; width:100%; max-width:552px; height:auto;" />
-              <p class="text small" style="margin: 14px 0 0 0; color:#666666;">
-                You received this message because you requested a project update.
-                <a class="link" href="https://babyziba.github.io/CS545HW1/" target="_blank" style="color:#0000EE; text-decoration:underline;">Manage preferences</a>
+              <p class="text small" style="margin: 0; color:#666666;">
+                You’re receiving this because you joined Meow Club updates.
+                <a class="link" href="mailto:cats@purrfectpaws.club?subject=Unsubscribe" style="color:#0000EE; text-decoration:underline;">Unsubscribe</a>
               </p>
-              <p class="text small" style="margin: 8px 0 0 0; color:#666666;">© 2026 Anita Jalili</p>
+              <p class="text small" style="margin: 8px 0 0 0; color:#666666;">© 2026 Purrfect Paws</p>
             </td>
           </tr>
 
